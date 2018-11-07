@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Atmosphere Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href = "styles.css">  <style>
+        body {background-color:rgb(226, 225, 225)}
+  </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Lattitude</a>
+          </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a href="maxtemp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html" class="nav-link">Comparison</a></li>
+              <li><a href="data.html" class="nav-link">Data</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <!-- Container 1 -->
+    <div class="container">
+            <!--<div class="row">-->
+          <div class="row">
+            <div class="col-lg-8 col-sm-12">
+              <h1>Max Temperature</h1>
+              <hr>
+                <img src="TemperatureInWorldCities.png" alt="maxtemp" height="400" width="600" align="center">
+                <p>World city data show significantly warmer weather as the equator is approached, the zeroth circle of Latidue. 
+                The timing of this analysis was September 2018, which shows the Northern Hemisphere tending to be cooler than the Southern, which
+                agrees with the time of year data was gathered in that the Southern Hemisphere warms during months the Northern Hemisphere is cooler.
+                </p>
+           </div>
+            <div class="col-md-4 col-sm-12">
+                <h2 style="text-align: center">Visualizations</h2>
+                <hr>
+                    <div class= "col-md-6 col-sm-3">
+                        <img class ="boxx" id = "pic1" src="TemperatureInWorldCities.png" alt="maxtemp" height="225" width="325"> 
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id ="pic2" src="HumidityInWorldCities.png" alt="humidity" height="225" width="325">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic3" src="CloudinessInWorldCities.png" alt="cloudiness" height="225" width="325">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic4" src="WindspeedInWorldCities.png" alt="windspeed" height="225" width="325">
+                    </div> 
+             </div>
+     </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
+                
